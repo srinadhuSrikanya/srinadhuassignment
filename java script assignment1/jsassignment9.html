@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        const arr1 = ["A","B","C"];
+const arr2 = [1,2,3];
+const mergeAlernatively = (arr1, arr2) => {
+   const res = [];
+   for(let i = 0; i < arr1.length + arr2.length; i++){
+      if(i % 2 === 0){
+         res.push(arr1[i/2]);
+      }else{
+         res.push(arr2[(i-1)/2]);
+      };
+   };
+   return res;
+};
+console.log(mergeAlernatively(arr1, arr2));
+document.write(mergeAlernatively(arr1,arr2));
+    </script>
+</body>
+</html>
